@@ -1,37 +1,38 @@
 
 
 <div class="banner">
-      <div class="banner-content">
-        <h1>get your drink on</h1>
-        <p>it's always five o' clock somewhere, but who says you have to wait?</p>
-      </div>
-    </div>
-
-        <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-
-
-<h1>All Cocktails</h1>
-
-        <%= link_to new_cocktail_path do %>
-          <i class="fa fa-plus"></i> Add a new cocktail
-        <% end %>
-
-<br>
-<br>
-<div class="cards">
-  <% @cocktails.each do |cocktail| %>
-      <div class="card">
-        <div class="card-content">
-          <div class="card-name">
-            <%= link_to cocktail.name, cocktail_path(cocktail.id) %>
-          </div>
-        </div>
-      </div>
-  <% end %>
+  <div class="banner-content">
+    <h1>get your drink on</h1>
+    <p>it's always five o' clock somewhere, but who says you have to wait?</p>
+  </div>
 </div>
 
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+
+      <h2>All Cocktails</h2>
+
+      <%= link_to new_cocktail_path do %>
+      <i class="fa fa-plus"></i> Add a new cocktail
+      <% end %>
+
+      <br>
+      <br>
+
+      <div class="cards">
+        <% @cocktails.each do |cocktail| %>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-name">
+              <%= link_to cocktail.name, cocktail_path(cocktail.id) %>
+            </div>
+             <i class="fa fa-glass"></i>
+          </div>
         </div>
+        <% end %>
       </div>
+
     </div>
+  </div>
+</div>

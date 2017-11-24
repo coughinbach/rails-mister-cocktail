@@ -9,8 +9,9 @@
   border-radius: 1px;
   box-shadow: 0 0 5px rgba(0,0,0,0.3);
   transition: all 0.3s ease;
-  background-image: asset-path('/images/cocktail.png');
+  background-image: asset-url('cocktail-card.jpg');
   background-size: cover;
+  opacity: 0.9;
 }
 
 // .card:hover {
@@ -28,6 +29,21 @@
   right: 10px;
   bottom: 10px;
   a {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: bolder;
+    color: white;
+  }
+  a:hover {
+    color: white;
+    opacity: 0.6;
   }
 }
+
+  .card .fa-glass {
+  color: white;
+  font-size: 18px;
+  opacity: 0.6;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  }

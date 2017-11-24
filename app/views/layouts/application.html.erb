@@ -14,8 +14,14 @@
   </head>
 
   <body>
-    <div class="navbar-wagon">
-      <i class="fa fa-glass" aria-hidden="true"></i>
+    <div class="navbar-wagon navbar-fixed-top">
+
+      <%= link_to "https://www.github.com/coughinbach", class: "btn nav-btn" do %>
+        <i class="fa fa-question-circle-o"></i>
+      <% end %>
+      <%= link_to cocktails_path, class: 'btn nav-btn' do %>
+      <i class="fa fa-history"></i>
+      <% end %>
     </div>
 
           <%= yield %>

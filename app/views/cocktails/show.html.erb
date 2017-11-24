@@ -1,4 +1,8 @@
-<h1 class="well"><%= @cocktail.name %></h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+
+<h1><%= @cocktail.name %></h1>
 
 <ul class="well">
   <% @cocktail.doses.each do |dose| %>
@@ -17,3 +21,7 @@
 <%= link_to cocktails_path, class: 'btn btn-primary' do %>
   <i class="fa fa-history"></i>
 <% end %>
+
+</div>
+</div>
+</div>
