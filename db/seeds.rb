@@ -23,7 +23,7 @@ end
 p "done"
 
 p "Creating cocktail names..."
-20.times do
+21.times do
   cocktail = Cocktail.new(name: Faker::Hipster.words(2, false, true).join(" ").capitalize)
   cocktail.save
 end

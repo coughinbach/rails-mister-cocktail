@@ -1,0 +1,33 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 250px;
+  margin: 10px;
+  border-radius: 1px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  background-image: asset-path('/images/cocktail.png');
+  background-size: cover;
+}
+
+// .card:hover {
+//   margin-top: -5px;
+// }
+
+.card-content {
+  height: 200px;
+  color: white;
+  position: relative;
+}
+
+.card-name {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  a {
+    font-size: 20px;
+  }
+}
