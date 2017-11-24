@@ -13,11 +13,8 @@
     <div class="col-md-10 col-md-offset-1">
       <div class="show-container">
 
+    <%= cl_image_tag @cocktail.photo, width: 200, class: "show-image" %>
 
-
-        <%= image_tag "cocktail-show.png", alt: "cocktail", class: "show-image", width: 200%>
-
-        <%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
 
         <h1><%= @cocktail.name %></h1>
 
