@@ -9,7 +9,7 @@
   border-radius: 1px;
   box-shadow: 0 0 5px rgba(0,0,0,0.3);
   transition: all 0.3s ease;
-  background-image: asset-url('cocktail-card.jpg');
+  // background-image: asset-url('cocktail-card.jpg');
   background-size: cover;
   opacity: 0.9;
   .fa-glass {
@@ -39,6 +39,7 @@
   a {
     font-size: 18px;
     font-weight: bolder;
+    text-shadow: 0px 1px #2d3142;
     color: white;
   }
   a:hover {
