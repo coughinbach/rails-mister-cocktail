@@ -10,27 +10,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<!--     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %> -->
   </head>
 
   <body>
-    <div class="navbar-wagon navbar-fixed-top">
 
-      <%= link_to "https://www.github.com/coughinbach", class: "btn nav-btn" do %>
-        <i class="fa fa-question-circle-o"></i>
-      <% end %>
-      <%= link_to cocktails_path, class: 'btn nav-btn' do %>
-      <i class="fa fa-history"></i>
-      <% end %>
-    </div>
 
           <%= yield %>
 
-    <div class="footer">
-      <div class="footer-text">
-        this cocktail manager was made with my <i class="fa fa-tint" aria-hidden="true"></i> at Le Wagon
-      </div>
-    </div>
 
+    <%= javascript_include_tag "application" %>
+    <%= javascript_pack_tag "application" %>
   </body>
 </html>

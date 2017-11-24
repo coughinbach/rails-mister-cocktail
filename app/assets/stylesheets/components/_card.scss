@@ -12,6 +12,14 @@
   background-image: asset-url('cocktail-card.jpg');
   background-size: cover;
   opacity: 0.9;
+  .fa-glass {
+  color: white;
+  font-size: 18px;
+  opacity: 0.6;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  }
 }
 
 // .card:hover {
@@ -39,11 +47,3 @@
   }
 }
 
-  .card .fa-glass {
-  color: white;
-  font-size: 18px;
-  opacity: 0.6;
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  }

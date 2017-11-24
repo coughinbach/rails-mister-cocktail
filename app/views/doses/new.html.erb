@@ -1,4 +1,28 @@
-<h1>Add an ingredient to <%= @cocktail.name %>: </h1>
+<div class="navbar-wagon-blue navbar-fixed-top">
 
+  <%= link_to "https://www.github.com/coughinbach", class: "btn nav-btn" do %>
+  <i class="fa fa-question-circle-o"></i>
+  <% end %>
+  <%= link_to cocktails_path, class: 'btn nav-btn' do %>
+  <i class="fa fa-history"></i>
+  <% end %>
+</div>
 
-<%= render "form" %>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <div class="show-container">
+
+<h1>Add to <%= @cocktail.name %>: </h1>
+
+        <%= render "form" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer navbar-fixed-bottom">
+  <div class="footer-text">
+    this cocktail manager was made with my <i class="fa fa-tint" aria-hidden="true"></i> at Le Wagon
+  </div>
+</div>

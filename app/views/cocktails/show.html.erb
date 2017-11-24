@@ -1,27 +1,43 @@
+<div class="navbar-wagon-blue navbar-fixed-top">
+
+  <%= link_to "https://www.github.com/coughinbach", class: "btn nav-btn" do %>
+  <i class="fa fa-question-circle-o"></i>
+  <% end %>
+  <%= link_to cocktails_path, class: 'btn nav-btn' do %>
+  <i class="fa fa-history"></i>
+  <% end %>
+</div>
+
 <div class="container">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
+      <div class="show-container">
 
-<h1><%= @cocktail.name %></h1>
+        <%= image_tag "cocktail-show.png", alt: "cocktail", class: "show-image", width: 200%>
 
-<ul class="well">
-  <% @cocktail.doses.each do |dose| %>
-    <li>
-      <%= dose.description %> <%= dose.ingredient.name %>
-      <%= link_to dose_path(dose), method: :delete, data: { confirm: "Delete #{dose.ingredient.name}?" } do %>
-        <i class="fa fa-trash-o" aria-hidden="true"></i>
-      <% end %>
-    </li>
-  <% end %>
-</ul>
+        <h1><%= @cocktail.name %></h1>
 
-<%= link_to new_cocktail_dose_path(@cocktail.id), class: 'btn btn-primary' do %>
-  <i class="fa fa-plus"></i> Add an ingredient
-<% end %>
-<%= link_to cocktails_path, class: 'btn btn-primary' do %>
-  <i class="fa fa-history"></i>
-<% end %>
+        <ul>
+          <% @cocktail.doses.each do |dose| %>
+          <li>
+            <%= dose.description %> <%= dose.ingredient.name %>
+            <%= link_to dose_path(dose), method: :delete, data: { confirm: "Delete #{dose.ingredient.name}?" } do %>
+            <i class="fa fa-trash-o" aria-hidden="true"></i>
+            <% end %>
+          </li>
+          <% end %>
+        </ul>
 
+        <%= link_to new_cocktail_dose_path(@cocktail.id), class: 'btn btn-form' do %>
+        <i class="fa fa-plus"></i> Add an ingredient
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
+
+<div class="footer navbar-fixed-bottom">
+  <div class="footer-text">
+    this cocktail manager was made with my <i class="fa fa-tint" aria-hidden="true"></i> at Le Wagon
+  </div>
 </div>

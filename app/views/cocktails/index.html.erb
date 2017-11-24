@@ -1,9 +1,17 @@
+<div class="navbar-wagon navbar-fixed-top">
 
+  <%= link_to "https://www.github.com/coughinbach", class: "btn nav-btn" do %>
+  <i class="fa fa-question-circle-o"></i>
+  <% end %>
+  <%= link_to cocktails_path, class: 'btn nav-btn' do %>
+  <i class="fa fa-history"></i>
+  <% end %>
+</div>
 
 <div class="banner">
   <div class="banner-content">
     <h1>get your drink on</h1>
-    <p>it's always five o' clock somewhere, but who says you have to wait?</p>
+    <p>it's five o' clock somewhere, but who says you even have to wait?</p>
   </div>
 </div>
 
@@ -27,12 +35,18 @@
             <div class="card-name">
               <%= link_to cocktail.name, cocktail_path(cocktail.id) %>
             </div>
-             <i class="fa fa-glass"></i>
+            <i class="fa fa-glass"></i>
           </div>
         </div>
         <% end %>
       </div>
 
     </div>
+  </div>
+</div>
+
+<div class="footer footer-hide navbar-fixed-bottom">
+  <div class="footer-text">
+    this cocktail manager was made with my <i class="fa fa-tint" aria-hidden="true"></i> at Le Wagon
   </div>
 </div>

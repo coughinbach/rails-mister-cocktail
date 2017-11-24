@@ -4,25 +4,54 @@ body {
 
 h1 {
   color: #4f5d75;
+  font-size: 34px;
 }
 
 h2 {
   color: #ef8354;
   font-size: 30px;
   font-weight: bolder;
+  margin-bottom: 20px;
 }
 
 a {
   color: #4f5d75;
   text-decoration: none;
-}
-
-a:hover {
+  &:hover {
   color: #bfc0c0;
   text-decoration: none;
+  }
 }
 
 .container {
-  padding: 30px 0px;
-  min-height: 100vh;
+  padding: 60px 0px;
+}
+
+.btn-form {
+  background-color: #ef8354;
+  color: white;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.show-container {
+  margin-top: 50px;
+  width: 600px;
+  background-color: #F5F5F5;
+  padding: 10px 30px 50px 50px;
+  border-bottom: 5px solid #ef8354;
+  border-radius: 3px;
+}
+
+.show-image {
+  border-radius: 50%;
+  border: 3px solid white;
+  text-align: center;
+}
+
+.simple_form label {
+  color: #4f5d75;
+  font-size: 16px;
+  font-family: "Lato";
+  margin-top: 20px;
 }
